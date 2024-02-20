@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/css/main.css">
+    <link rel="stylesheet" href="/resources/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./resources/js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@600&family=Maitree:wght@600&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <title>Trang Chủ</title>
+</head>
+<body class="grid">
+    <header>
+        <nav class="navbar">
+            <div class="header-bg"></div>
+            <div class="header-left">
+                <a href="home.html" class="">Trang chủ</a>
+                <a href="tintuc.html" class="">Tin tức</a>
+                <a href="#" class="">Đăng ký tài khoản</a>
+            </div>
+            <img src="./resources/img/logo_thienlong.png" alt="logo" class="" />
+            <div class="header-right">
+                <a href="" class="">Nạp tiền</a>
+                <a href="" class="">Hướng dẫn</a>
+                <a href="" class="">1900 988961</a>
+            </div>
+        </nav>
+    </header>
+    <main class="mt-96">
+        <div class="banner">
+            <div class="grid grid-cols-24 gap-4">
+                <div class="col-span-4 gap-4">
+                    <div class="dowload-btn">
+                        <img src="./resources/img/bt_downloadgame.png" alt="">
+                    </div>
+                    <div class="btn-group relative mt-4">
+                        <img src="./resources/img/btn-group.png" alt="" class="h-full">
+                        <div class="absolute top-0 left-0 flex-col items-center h-full">
+                            <button class="px-5 h-1/4 gap-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 1280 1536">
+                                    <path fill="white" d="M1280 1271q0 109-62.5 187t-150.5 78H213q-88 0-150.5-78T0 1271q0-85 8.5-160.5t31.5-152t58.5-131t94-89T327 704q131 128 313 128t313-128q76 0 134.5 34.5t94 89t58.5 131t31.5 152t8.5 160.5m-256-887q0 159-112.5 271.5T640 768T368.5 655.5T256 384t112.5-271.5T640 0t271.5 112.5T1024 384"/>
+                                </svg>                                      
+                                <p class="text-right">ĐĂNG KÝ / <br>ĐĂNG NHẬP</p>
+                            </button>
+                            <button class="px-5 h-1/4 gap-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 26 26">
+                                    <path fill="white" d="M18 .188c-4.315 0-7.813 1.929-7.813 4.312S13.686 8.813 18 8.813c4.315 0 7.813-1.93 7.813-4.313S22.314.187 18 .187zm7.813 5.593c-.002 2.383-3.498 4.313-7.813 4.313c-4.303 0-7.793-1.909-7.813-4.281V7.5c0 1.018.652 1.95 1.72 2.688c1.08.294 2.042.702 2.843 1.218c.993.252 2.085.406 3.25.406c4.315 0 7.813-1.929 7.813-4.312zm0 3c0 2.383-3.498 4.313-7.813 4.313c-.525 0-1.035-.039-1.531-.094a4.35 4.35 0 0 1 .781 1.781c.249.014.495.031.75.031c4.315 0 7.813-1.929 7.813-4.312zM8 11.187c-4.315 0-7.813 1.93-7.813 4.313S3.686 19.813 8 19.813c4.315 0 7.813-1.93 7.813-4.313S12.314 11.187 8 11.187m17.813.594c-.002 2.383-3.498 4.313-7.813 4.313c-.251 0-.505-.018-.75-.032c-.011.075-.017.175-.031.25c.05.151.093.3.093.47v1c.227.011.455.03.688.03c4.315 0 7.813-1.929 7.813-4.312zm0 3c-.002 2.383-3.498 4.313-7.813 4.313c-.251 0-.505-.018-.75-.032c-.011.075-.017.175-.031.25c.05.15.093.3.093.47v1c.227.011.455.03.688.03c4.315 0 7.813-1.929 7.813-4.312zm-10 2c-.002 2.383-3.498 4.313-7.813 4.313c-4.303 0-7.793-1.909-7.813-4.282V18.5c0 2.383 3.497 4.313 7.813 4.313s7.813-1.93 7.813-4.313zm0 3c-.002 2.383-3.498 4.313-7.813 4.313c-4.303 0-7.793-1.909-7.813-4.282V21.5c0 2.383 3.497 4.313 7.813 4.313s7.813-1.93 7.813-4.313z"/>
+                                </svg>                    
+                                <p>NẠP THẺ</p>
+                            </button>
+                            <button class="px-5 h-1/4 gap-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+                                    <path fill="white" fill-rule="evenodd" d="M12 5a7 7 0 0 0-7 7v1.2a3 3 0 0 1 1-.2h2c.6 0 1 .4 1 1v6c0 .6-.4 1-1 1H6a3 3 0 0 1-3-3v-6a9 9 0 0 1 18 0v6a3 3 0 0 1-3 3h-2a1 1 0 0 1-1-1v-6c0-.6.4-1 1-1h2c.4 0 .7 0 1 .2V12a7 7 0 0 0-7-7" clip-rule="evenodd"/>
+                                </svg>
+                                <p>DỊCH VỤ</p>
+                            </button>
+                            <button class="px-5 h-1/4 gap-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+                                    <path fill="white" d="M12.884 2.532c-.346-.654-1.422-.654-1.768 0l-9 17A.999.999 0 0 0 3 21h18a.998.998 0 0 0 .883-1.467zM13 18h-2v-2h2zm-2-4V9h2l.001 5z"/>
+                                </svg>
+                                <p>BÁO LỖI</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-24 gap-4 mt-4">
+                <div class="col-span-4 relative">
+                    <img class="" src="./resources/img/btn-group.png" alt="">
+                    <div class="btn-group">
+                        <div class="absolute top-0 left-0 flex-col items-center w-full h-full">
+                            <button class="px-5 h-1/4 gap-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+                                    <path fill="white" d="M3.783 2.826L12 1l8.217 1.826a1 1 0 0 1 .783.976v9.987a6 6 0 0 1-2.672 4.992L12 23l-6.328-4.219A6 6 0 0 1 3 13.79V3.802a1 1 0 0 1 .783-.976M13 10V5l-5 7h3v5l5-7z"/>
+                                </svg>                                      
+                                <p class="text-right">MẤT ĐỒ / <br>TÀI KHOẢN</p>
+                            </button>
+                            <button class="px-5 h-1/4 gap-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 32 32">
+                                    <path fill="white" d="M16 8.087c1.007 0 1.826-.82 1.826-1.826c0-1.006-.82-1.825-1.826-1.825s-1.826.82-1.826 1.826c0 1.008.82 1.827 1.826 1.827zm0-3.044a1.217 1.217 0 1 1 0 2.437a1.218 1.218 0 0 1 0-2.437m-11.077 8.25c.812 2.61 1.132 6.645 1.257 9.41c.027 0 .053-.008.08-.008h19.48c.027 0 .054.008.08.01c.125-2.767.445-6.8 1.257-9.413c-.45-.23-.813-.59-1.05-1.038c-2.4 2.048-5.157 6.18-5.157 6.18s-3.026-6.058-4.305-9.812c-.182.045-.37.074-.565.074s-.383-.03-.565-.073c-1.278 3.754-4.305 9.812-4.305 9.812s-2.756-4.132-5.157-6.18c-.235.446-.6.808-1.05 1.037zm.73-2.163c0-1.007-.82-1.826-1.827-1.826S2 10.124 2 11.13s.82 1.826 1.826 1.826s1.826-.82 1.826-1.826zm-1.827 1.218a1.217 1.217 0 1 1 0-2.437a1.217 1.217 0 0 1 0 2.439zM25.74 23.913H6.26a1.826 1.826 0 0 0 .001 3.651h19.48a1.827 1.827 0 0 0-.001-3.653zm2.434-14.61c-1.007 0-1.826.82-1.826 1.827s.82 1.826 1.826 1.826S30 12.136 30 11.13s-.82-1.826-1.826-1.826zm0 3.045a1.217 1.217 0 1 1-.001-2.439a1.217 1.217 0 0 1 .001 2.441z"/>
+                                </svg>                   
+                                <p>DỊCH VỤ VIP</p>
+                            </button>
+                            <button class="px-5 h-1/4 gap-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 20 20">
+                                    <path fill="white" d="M19.388.405a.605.605 0 0 0-1.141.399c.929 2.67-.915 4.664-2.321 5.732l-.568-.814c-.191-.273-.618-.5-.95-.504l-3.188.014a2.162 2.162 0 0 0-1.097.338L.729 12.157a1.01 1.01 0 0 0-.247 1.404l4.269 6.108c.32.455.831.4 1.287.082l9.394-6.588c.27-.191.582-.603.692-.918l.998-3.145c.11-.314.043-.793-.148-1.066l-.346-.496c1.888-1.447 3.848-4.004 2.76-7.133m-4.371 9.358a1.608 1.608 0 0 1-2.24-.396a1.614 1.614 0 0 1 .395-2.246a1.607 1.607 0 0 1 1.868.017c-.272.164-.459.26-.494.275a.606.606 0 0 0 .259 1.153c.086 0 .174-.02.257-.059c.194-.092.402-.201.619-.33a1.615 1.615 0 0 1-.664 1.586"/>
+                                </svg>
+                                <p>GIFTCODE</p>
+                            </button>
+                            <button class="px-5 h-1/4 gap-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.66em" height="1.5em" viewBox="0 0 1696 1536">
+                                    <path fill="white" d="M1671 350q40 57 18 129l-275 906q-19 64-76.5 107.5T1215 1536H292q-77 0-148.5-53.5T44 1351q-24-67-2-127q0-4 3-27t4-37q1-8-3-21.5t-3-19.5q2-11 8-21t16.5-23.5T84 1051q23-38 45-91.5t30-91.5q3-10 .5-30t-.5-28q3-11 17-28t17-23q21-36 42-92t25-90q1-9-2.5-32t.5-28q4-13 22-30.5t22-22.5q19-26 42.5-84.5T372 283q1-8-3-25.5t-2-26.5q2-8 9-18t18-23t17-21q8-12 16.5-30.5t15-35t16-36t19.5-32T504.5 12t36-11.5T588 6l-1 3q38-9 51-9h761q74 0 114 56t18 130l-274 906q-36 119-71.5 153.5T1057 1280H188q-27 0-38 15q-11 16-1 43q24 70 144 70h923q29 0 56-15.5t35-41.5l300-987q7-22 5-57q38 15 59 43m-1064 2q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1279 352l21-64q4-13-2-22.5t-20-9.5H670q-13 0-25.5 9.5T628 288zm-83 256q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1196 608l21-64q4-13-2-22.5t-20-9.5H587q-13 0-25.5 9.5T545 544z"/>
+                                </svg>
+                                <p>ĐIỀU KHOẢN</p>
+                            </button>
+                        </div>
+                    </div>  
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="news">
+            <div class="new_title grid grid-cols-3 items-center" id="news-title">
+                <img src="./resources/img/collapse-content-line.png" alt="">
+                <h3 class="text-center">Tin tức <span>&</span> Sự kiện</h3>
+                <img class="rotate-180" src="./resources/img/collapse-content-line.png" alt="">
+            </div>
+            <div class="relative">
+                <div>
+                    <img src="./resources/img/box.png" alt="">
+                </div>
+                <div class="board flex absolute top-0 h-full w-full">
+                    <div class="board-head w-1/5">
+                        <h1 class="pt-24 text-center">Bảng</h1>
+                        <h1 class="text-center">Tin</h1>
+                    </div>
+                
+                    <div class="board-select flex-col mt-14 pl-10">
+                        <div class="flex gap-20 mt-4 board-btn-group">
+                            <button class="board-button" id="btn-1">
+                                <h6>TIN TỨC</h6>
+                            </button>
+                            <button class="board-button" id="btn-2">
+                                <h6>SỰ KIỆN</h6>
+                            </button>
+                            <button class="board-button" id="btn-3">
+                                <h6>TÍNH NĂNG</h6>
+                            </button>
+                            <button class="board-button" id="btn-4">
+                                <h6>HƯỚNG DẪN</h6>
+                            </button>
+                        </div>
+                        <div class="carousel-main">
+                            <div class="carousel-cell">
+                                <div id="tin-tuc">
+                                    <section>
+                                        <div class="data-container"></div>
+                                        <div id="pagination-tintuc"></div>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="carousel-cell">
+                                <div id="su-kien">
+                                    <section>
+                                        <div class="data-container"></div>
+                                        <div id="pagination-sukien"></div>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="carousel-cell">
+                                <div id="tinh-nang">
+                                    <section>
+                                        <div class="data-container"></div>
+                                        <div id="pagination-tinhnang"></div>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="carousel-cell">
+                                <div id="huong-dan">
+                                    <section>
+                                        <div class="data-container"></div>
+                                        <div id="pagination-huongdan"></div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+
+    
+    <footer class="mt-[40rem] relative w-full justify-center">
+        <div class="">
+            <p>
+                Phát hành bởi Efun Corp
+                <br> Hotline: 1900 988961
+                <br> Email: support@efun.vn
+                <br> Địa chỉ: Số 19, 16A1, Làng Việt Kiều Châu Âu, Phường Mỗ Lao, Quận Hà Đông, Hà Nội, Việt Nam
+                <br> Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng: 25/QĐ-BC do Bộ Thông tin và Truyền thông cấp ngày 27/10/2006.
+                <br> Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 251/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/6/2015.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 w-7/12 absolute top-0 left-80">
+            <div class="flex">
+                <img src="./resources/img/Artboard.png" alt="" id="block18" class="mt-4">
+                <img src="./resources/img/logo_thienlong.png" alt="" id="footer-logo" class="">
+            </div>
+            
+            <img src="./resources/img/Artboard.png" alt="" id="artboard" class="justify-self-end">
+        </div>
+        
+    </footer>
+    <script src=""></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./resources/js/flickyti.js"></script>
+    <script src="./resources/js/style.js"></script>
+    <script src="./resources/js/main.js"></script>
+    <script src="./resources/js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
