@@ -1,3 +1,24 @@
+function openside() {
+    const sideBarWidth = document.getElementById("mySidenav").style.transform;
+    
+    if (sideBarWidth == "translateX(120px)") {
+        document.getElementById("mySidenav").style.transform = "translateX(0)";
+        document.getElementById("close-open").style.transform = "rotate(0deg)";
+    } else {
+        document.getElementById("mySidenav").style.transform = "translateX(120px)";
+        document.getElementById("close-open").style.transform = "rotate(180deg)";
+    }
+}
+function menu_mobi_Btn() {
+    const menuWidth = document.getElementById("menu_mobi").style.transform;
+
+    if (menuWidth == "translateX(278px)") {
+        document.getElementById("menu_mobi").style.transform = "translateX(0)";
+    } else {
+        document.getElementById("menu_mobi").style.transform = "translateX(278px)";
+    }
+}
+
 $(function() {
     (function(name) {
         var container = $('#pagination-' + name);
@@ -57,83 +78,83 @@ $(function() {
 
                 {
                     id: 11,
-                    title: "a",
+                    title: 'Máy chủ mới S99 "Thiên Nam Môn"',
                     date: "22/06",
                 },
                 {
                     id: 12,
-                    title: "b",
+                    title: 'Máy chủ mới S99 "Thiên Nam Môn"',
                     date: "16/06",
                 },
                 {
                     id: 13,
-                    title: "c",
+                    title: 'Máy chủ mới S99 "Thiên Nam Môn"',
                     date: "11/06",
                 },
                 {
                     id: 14,
-                    title: "d",
+                    title: 'Máy chủ mới S99 "Thiên Nam Môn"',
                     date: "06/06",
                 },
                 {
                     id: 15,
-                    title: "e",
+                    title: 'Máy chủ mới S99 "Thiên Nam Môn"',
                     date: "01/06",
                 },
                 {
                     id: 16,
-                    title: "f",
+                    title: 'Máy chủ mới S99 "Thiên Nam Môn"',
                     date: "01/06",
                 },
                 {
                     id: 17,
-                    title: "g",
+                    title: 'Máy chủ mới S99 "Thiên Nam Môn"',
                     date: "31/05",
                 },
                 {
                     id: 18,
-                    title: "h",
+                    title: 'Máy chủ mới S99 "Thiên Nam Môn"',
                     date: "15/05",
                 },
                 {
                     id: 19,
-                    title: "h",
+                    title: 'Máy chủ mới S99 "Thiên Nam Môn"',
                     date: "06/05",
                 },
                 {
                     id: 20,
-                    title: "i",
+                    title: 'Máy chủ mới S99 "Thiên Nam Môn"',
                     date: "22/04",
                 },
 
                 {
                     id: 21,
-                    title: "a",
+                    title: 'Máy chủ mới S99 "Thiên Nam Môn"',
                     date: "22/06",
                 },
                 {
                     id: 22,
-                    title: "b",
+                    title: 'Máy chủ mới S99 "Thiên Nam Môn"',
                     date: "16/06",
                 },
                 {
                     id: 23,
-                    title: "c",
+                    title: 'Máy chủ mới S99 "Thiên Nam Môn"',
                     date: "11/06",
                 },
                 {
                     id: 24,
-                    title: "d",
+                    title: 'Máy chủ mới S99 "Thiên Nam Môn"',
                     date: "06/06",
                 },
                 {
                     id: 25,
-                    title: "e",
+                    title: 'Máy chủ mới S99 "Thiên Nam Môn"',
                     date: "01/06",
                 },
                 {
                     id: 26,
-                    title: "f",
+                    title: 'Máy chủ mới S99 "Thiên Nam Môn"',
                     date: "01/06",
                 },
                 {

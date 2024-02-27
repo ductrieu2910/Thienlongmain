@@ -1,0 +1,27 @@
+@media screen and (max-width: 1400px){
+.box_tintuc_img {
+    width: 85.86vw;
+    height: 59.143vw;
+    padding: 1.6vw 0 0 1.6vw;
+}
+}
+@media screen and (max-width: 1150px) {
+    .navbar {
+        height: 10vw;
+    }
+    .navbar #logo {
+        display: none;
+    }
+    .navbar #logo-mobi {
+        display: block;
+    }
+    .banner-mobi {
+        display: flex;
+    }
+    .mobi-btn {
+        display: flex;
+    }
+    .btn_menu_nav{
+        display: block;
+    }
+}

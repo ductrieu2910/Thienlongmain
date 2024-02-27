@@ -3,21 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/responsive.css">
     <link rel="stylesheet" href="/resources/css/main.css">
     <link rel="stylesheet" href="/resources/css/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./resources/js/tailwind.config.js"></script>
+     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@600&family=Maitree:wght@600&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
     <title>Trang Chủ</title>
 </head>
 <body class="grid">
+    <div id="mySidenav" class="sidenav">
+        <a class="" onclick="openside()">
+            <img src="./resources/img/btn-side-nav.png" alt="" id="close-open">
+        </a>
+        <img src="./resources/img/logo_icon.png" alt="" class="side-logo">
+        <img src="./resources/img/btn_nạp thẻ.png" alt="" class="side-btn">
+        <img src="./resources/img/btn_tải apk.png" alt="" class="side-btn">
+        <!-- <img src="./resources/img/" alt="" class="side-btn"> -->
+        <img src="./resources/img/btn_tảigoogleplay.png" alt="" class="side-btn">
+        <img src="./resources/img/btn_applestr_mb.png" alt="" class="side-btn">
+    </div>
     <header>
         <nav class="navbar">
+            <img src="resources/img/logo_icon.png" alt="" id="logo-mobi">
+            <div class="">
+                <img src="./resources/img/btn_taigame.png" alt="" class="button">
+                <img src="./resources/img/btn_dknhanh.png" alt="" class="button">
+            </div>
+            <a class="btn_menu_nav" onclick="menu_mobi_Btn()">
+                <img src="./resources/img/btn_menu_mobi.svg" alt="">
+            </a>
+            <div class="menu_nav_mobi" id="menu_mobi">
+                <ul>
+                    <li>
+                        <a href="#" class="">Đăng nhập/Đăng ký</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">Hướng dẫn tân thủ</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">Giftcode</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">Nạp thẻ</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">Báo lỗi</a>
+                    </li>
+                    <li>
+                        <a href="#" class="">1900 988961</a>
+                    </li>
+                </ul>
+            </div>
             <div class="header-bg"></div>
             <div class="header-left">
                 <a href="home.html" class="">Trang chủ</a>
@@ -32,21 +74,22 @@
             </div>
         </nav>
     </header>
+    
     <main class="mt-96">
         <div class="banner">
-            <div class="grid grid-cols-24 gap-4">
-                <div class="col-span-4 gap-4">
+            <div class="flex gap-4">
+                <div class=" gap-4">
                     <div class="dowload-btn">
                         <img src="./resources/img/bt_downloadgame.png" alt="">
                     </div>
-                    <div class="btn-group relative mt-4">
+                    <div class="btn-group relative mt-3">
                         <img src="./resources/img/btn-group.png" alt="" class="h-full">
                         <div class="absolute top-0 left-0 flex-col items-center h-full">
                             <button class="px-5 h-1/4 gap-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 1280 1536">
                                     <path fill="white" d="M1280 1271q0 109-62.5 187t-150.5 78H213q-88 0-150.5-78T0 1271q0-85 8.5-160.5t31.5-152t58.5-131t94-89T327 704q131 128 313 128t313-128q76 0 134.5 34.5t94 89t58.5 131t31.5 152t8.5 160.5m-256-887q0 159-112.5 271.5T640 768T368.5 655.5T256 384t112.5-271.5T640 0t271.5 112.5T1024 384"/>
                                 </svg>                                      
-                                <p class="text-right">ĐĂNG KÝ / <br>ĐĂNG NHẬP</p>
+                                <p class="text-left">ĐĂNG KÝ / <br>ĐĂNG NHẬP</p>
                             </button>
                             <button class="px-5 h-1/4 gap-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 26 26">
@@ -69,9 +112,9 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="main-carousel col-span-14">
-                    <div class="carousel-cell w-full">
+
+                <div class="main-carousel w-[740px]">
+                    <div class="carousel-cell ">
                         <img class="w-full" src="resources/img/banner_tintuc.png" alt="" >
                     </div>
                     <div class="carousel-cell">
@@ -88,8 +131,8 @@
                     </div>
                     <div class="carousel-cell">
                         <img class="" src="resources/img/banner_tintuc.png" alt="">
-                    </div>
-                    <!-- <div class="swiper mySwiper">   
+                    </div> 
+                     <!-- <div class="swiper mySwiper">   
                         <div class="swiper-wrapper">
                           <div class="swiper-slide ">
                             <img class="w-full" src="/resources/img/banner_tintuc.png" alt="" >
@@ -113,14 +156,14 @@
                         <div class="swiper-pagination"></div>
                     </div>   -->
                 </div>
-                <div class="col-span-6" id="dang-ky">
+                <div class="" id="dang-ky">
                     <img class="" src="./resources/img/banner-event.png" alt="">
                 </div>
             </div>
 
-            <div class="grid grid-cols-24 gap-4 mt-4">
-                <div class="col-span-4 relative">
-                    <img class="" src="./resources/img/btn-group.png" alt="">
+            <div class="flex gap-4 mt-4">
+                <div class="btn_group relative">
+                    <img class="h-full w-full" src="./resources/img/btn-group.png" alt="">
                     <div class="btn-group">
                         <div class="absolute top-0 left-0 flex-col items-center w-full h-full">
                             <button class="px-5 h-1/4 gap-4">
@@ -150,11 +193,11 @@
                         </div>
                     </div>  
                 </div>
-                <div class="col-span-10 grid grid-cols-2">
+                <div class="qr-code grid grid-flow-col">
                     <img class="" src="./resources/img/group.png" alt="">
                     <img class="" src="./resources/img/Qr_fb.png" alt="">
                 </div>
-                <div class="col-span-10 flex">
+                <div class="grid grid-flow-col auto-cols-auto">
                     <div>
                         <img class="" src="./resources/img/btn_hinhanhgame.png" alt="">
                     </div>
@@ -164,37 +207,51 @@
                 </div>
             </div>
         </div>
-
-        <div id="news">
-            <div class="grid grid-cols-3 items-center" id="news-title">
-                <img src="./resources/img/collapse-content-line.png" alt="">
-                <h3 class="text-center">Tin tức <span>&</span> Sự kiện</h3>
-                <img class="rotate-180" src="./resources/img/collapse-content-line.png" alt="">
+        <div class="banner-mobi flex justify-center items-center">
+            <div class="banner-mobi-container">
+                <div class="banner-1">
+                    <img class="w-full button" src="./resources/img/logo_icon.png" alt="">
+                    <img class="mt-[1%] button" src="./resources/img/btn_dangkynhanh_mb.png" alt="">
+                </div>
+                <div class="banner-2">
+                    <img class="button" src="./resources/img/btn_napthe_mb.png" alt="">
+                    <img class="w-[89%] ml-[3.5%] mt-[9%] button" src="./resources/img/btn_nhapcode_mb.png" alt="">
+                </div>
+                <div class="banner-3 gap-[11%] flex-col flex">
+                    <img class="w-[95%] button" src="./resources/img/btn_ggplay_mb.png" alt="">
+                    <img class="w-[95%] button" src="./resources/img/btn_applestr_mb.png" alt="">
+                    <img class="w-[95%] button" src="./resources/img/btn_tải apk.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="news" class="mt-20">
+            <div class="title_tintuc" >
+                <img class="text-center" src="./resources/img/title_tintuc.png" alt="">
+                <!-- <h3 class="text-center">Tin tức <span>&</span> Sự kiện</h3>
+                <img class="rotate-180" src="./resources/img/collapse-content-line.png" alt=""> -->
             </div>
 
-            <div class="relative">
-                <div>
-                    <img src="./resources/img/box.png" alt="">
-                </div>
-                <div class="board flex absolute top-0 h-full w-full">
-                    <div class="board-head w-1/5">
-                        <h1 class="pt-24 text-center">Bảng</h1>
-                        <h1 class="text-center">Tin</h1>
-                    </div>
-                
-                    <div class="board-select flex-col mt-14 pl-10">
-                        <div class="flex gap-20 mt-4 board-btn-group">
+            <div class="news-board relative">
+                    <!-- <div>
+                        <img src="./resources/img/box.png" alt="">
+                    </div> -->
+                    <div class="board-select flex-col top-[5%] right-[5%]  list_new"> 
+                        <div class="flex justify-between mt-4 board-btn-group">
                             <button class="board-button" id="btn-1">
                                 <h6>TIN TỨC</h6>
+                                <img src="./resources/img/Component.svg" alt="" id="btn-img-1">
                             </button>
                             <button class="board-button" id="btn-2">
                                 <h6>SỰ KIỆN</h6>
+                                <img src="./resources/img/Component.svg" alt="" id="btn-img-1">
                             </button>
                             <button class="board-button" id="btn-3">
                                 <h6>TÍNH NĂNG</h6>
+                                <img src="./resources/img/Component.svg" alt="" id="btn-img-1">
                             </button>
                             <button class="board-button" id="btn-4">
                                 <h6>HƯỚNG DẪN</h6>
+                                <img src="./resources/img/Component.svg" alt="" id="btn-img-1">
                             </button>
                         </div>
                         <div class="carousel-main">
@@ -232,14 +289,16 @@
                             </div>
                         </div>
                     </div>    
-                </div>
-            </div>
         </div>
+
+
         <div id="sect">
-            <div class="grid grid-cols-3 items-center">
-                <img src="./resources/img/collapse-content-line.png" alt="">
+            <div class="title_hethong">
+                <!-- <img src="./resources/img/collapse-content-line.png" alt="">
                 <h1 class="text-center">Hệ Thống Môn Phái</h1>
                 <img class="rotate-180" src="./resources/img/collapse-content-line.png" alt="">
+                 -->
+                <img src="resources/img/title_hethong.png" alt="">
             </div>
             <div class="relative h-4/5">
                 <div class="carousel">
@@ -291,7 +350,7 @@
                     <img src="./resources/img/line.png" alt="">
                 </div>
             </div>
-            <div class="sect-button-group grid grid-cols-14 text-center mt-4">
+            <div class="sect-button-group flex justify-between text-center mt-14">
                 <button class="sect-button" id="btn-1">
                     <img src="./resources/img/Rectangle-3.png" alt="" class="ml-3">
                     <p>Tuyệt <br> Tình <br> Cốc</p>
