@@ -6,13 +6,12 @@
     <link rel="stylesheet" href="resources/css/responsive.css">
     <link rel="stylesheet" href="/resources/css/main.css">
     <link rel="stylesheet" href="/resources/css/style.css">
-     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@600&family=Maitree:wght@600&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
     <title>Trang Chủ</title>
 </head>
@@ -30,15 +29,16 @@
     </div>
     <header>
         <nav class="navbar">
-            <img src="resources/img/logo_icon.png" alt="" id="logo-mobi">
-            <div class="">
-                <img src="./resources/img/btn_taigame.png" alt="" class="button">
-                <img src="./resources/img/btn_dknhanh.png" alt="" class="button">
+            <img src="./resources/img/logo_icon.png" alt="" id="logo-mobi">
+            <div class="mobi-btn gap-8 ml-4">
+                <img src="./resources/img/mb_nav_btn_download.jpg" alt="" class="button">
+                <img src="./resources/img/mb_nav_btn_regist.jpg" alt="" class="button">
             </div>
-            <a class="btn_menu_nav" onclick="menu_mobi_Btn()">
-                <img src="./resources/img/btn_menu_mobi.svg" alt="">
+
+            <a class="hamburger-btn" onclick="hamburgerBtn()">
+                <img src="./resources/img/btn_menu.png" alt="">
             </a>
-            <div class="menu_nav_mobi" id="menu_mobi">
+            <div class="hamburger-menu" id="hamburger">
                 <ul>
                     <li>
                         <a href="#" class="">Đăng nhập/Đăng ký</a>
@@ -66,11 +66,11 @@
                 <a href="tintuc.html" class="">Tin tức</a>
                 <a href="#" class="">Đăng ký tài khoản</a>
             </div>
-            <img src="./resources/img/logo_thienlong.png" alt="logo" class="" />
+            <img src="./resources/img/logo_thienlong.png" alt="logo" id="logo"/>
             <div class="header-right">
-                <a href="" class="">Nạp tiền</a>
-                <a href="" class="">Hướng dẫn</a>
-                <a href="" class="">1900 988961</a>
+                <a href="#" class="">Nạp tiền</a>
+                <a href="#" class="">Hướng dẫn</a>
+                <a href="#" class="">1900 988961</a>
             </div>
         </nav>
     </header>
@@ -132,29 +132,6 @@
                     <div class="carousel-cell">
                         <img class="" src="resources/img/banner_tintuc.png" alt="">
                     </div> 
-                     <!-- <div class="swiper mySwiper">   
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide ">
-                            <img class="w-full" src="/resources/img/banner_tintuc.png" alt="" >
-                          </div>
-                          <div class="swiper-slide ">
-                            <img class="w-full" src="/resources/img/banner_tintuc.png" alt="" >
-                          </div>
-                          <div class="swiper-slide ">
-                            <img class="w-full" src="/resources/img/banner_tintuc.png" alt="" >
-                          </div>
-                          <div class="swiper-slide ">
-                            <img class="w-full" src="/resources/img/banner_tintuc.png" alt="" >
-                          </div>
-                          <div class="swiper-slide ">
-                            <img class="w-full" src="/resources/img/banner_tintuc.png" alt="" >
-                          </div>
-                          <div class="swiper-slide  ">
-                            <img class="w-full" src="/resources/img/banner_tintuc.png" alt="" >
-                          </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>   -->
                 </div>
                 <div class="" id="dang-ky">
                     <img class="" src="./resources/img/banner-event.png" alt="">
@@ -207,7 +184,7 @@
                 </div>
             </div>
         </div>
-        <div class="banner-mobi flex justify-center items-center">
+        <div class="banner-mobi  justify-center items-center">
             <div class="banner-mobi-container">
                 <div class="banner-1">
                     <img class="w-full button" src="./resources/img/logo_icon.png" alt="">
@@ -235,8 +212,8 @@
                     <!-- <div>
                         <img src="./resources/img/box.png" alt="">
                     </div> -->
-                    <div class="board-select flex-col top-[5%] right-[5%]  list_new"> 
-                        <div class="flex justify-between mt-4 board-btn-group">
+                    <div class="board-select flex-col top-[5%] right-[5%]  list_new" > 
+                        <div class="flex justify-between mt-6 board-btn-group" id="news_board_mobi">
                             <button class="board-button" id="btn-1">
                                 <h6>TIN TỨC</h6>
                                 <img src="./resources/img/Component.svg" alt="" id="btn-img-1">
@@ -254,12 +231,157 @@
                                 <img src="./resources/img/Component.svg" alt="" id="btn-img-1">
                             </button>
                         </div>
+                        <div id="news-mobi">
+                            <div class="news-carousel hidden">
+                                <div class="carousel-cell">
+                                    <img src="./resources/img/slide_mobile.jpg" alt="" />
+                                </div>
+                                <div class="carousel-cell">
+                                    <img src="./resources/img/slide_mobile.jpg" alt="" />
+                                </div>
+                                <div class="carousel-cell">
+                                    <img src="./resources/img/slide_mobile.jpg" alt="" />
+                                </div>
+                                <div class="carousel-cell">
+                                    <img src="./resources/img/slide_mobile.jpg" alt="" />
+                                </div>
+                                <div class="carousel-cell">
+                                    <img src="./resources/img/slide_mobile.jpg" alt="" />
+                                </div>
+                                <div class="carousel-cell">
+                                    <img src="./resources/img/slide_mobile.jpg" alt="" />
+                                </div>
+                            </div>
                         <div class="carousel-main">
                             <div class="carousel-cell">
                                 <div id="tin-tuc">
                                     <section>
                                         <div class="data-container"></div>
-                                        <div id="pagination-tintuc"></div>
+                                        <div id="pagination-tintuc">
+                                            <div class="board-info flex flex-col gap-3 mt-6">
+                                                <a href="tintuclist.html">
+                                                <div class="flex justify-between border-b border-[#385a54] cursor-pointer">  
+                                                    <p class="max-w-[675px] truncate"> Máy chủ mới S99 "Thiên Nam Môn" </p>
+                                                    <p> 1/3 </p>
+                                                </div>
+                                                </a>
+                                                <a href="tintuclist.html">
+                                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                                        <p class="max-w-[675px] truncate"> Nâng cấp tính năng giao dịch, tăng cường bảo mật rương đồ </p>
+                                                        <p> 16/06 </p>
+                                                    </div>
+                                                </a>
+                                                <a href="tintuclist.html">
+                                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                                        <p class="max-w-[675px] truncate"> Hướng dẫn nâng cấp trang bị thú cưng </p>
+                                                        <p> 11/06 </p>
+                                                    </div>
+                                                </a>
+                                                <a href="tintuclist.html">
+                                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                                        <p class="max-w-[675px] truncate"> Sự kiện "Ngày Hè Sôi Động" </p>
+                                                        <p> 06/06 </p>
+                                                    </div>
+                                                </a>
+                                                <a href="tintuclist.html">
+                                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                                        <p class="max-w-[675px] truncate"> Mở tính năng đăng ký Bang Hội </p>
+                                                        <p> 01/06 </p>
+                                                    </div>
+                                                </a>
+                                                <a href="tintuclist.html">
+                                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                                        <p class="max-w-[675px] truncate"> Máy chủ mới S99 "Thiên Nam Môn" </p>
+                                                        <p> 31/05 </p>
+                                                    </div>
+                                                </a>
+                                                <a href="tintuclist.html">
+                                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                                        <p class="max-w-[675px] truncate"> Mở phó bản mới "Đaị Liêu Kim Tướng" </p>
+                                                        <p> 15/05 </p>
+                                                    </div>
+                                                </a>
+                                                <a href="tintuclist.html">
+                                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                                        <p class="max-w-[675px] truncate"> Nâng cấp tính năng "Sư Đồ" Thêm kỹ năng, thêm v... </p>
+                                                        <p> 06/05 </p>
+                                                    </div>
+                                                </a>
+                                                <a href="tintuclist.html">
+                                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                                        <p class="max-w-[675px] truncate"> Mở phó bản mới "Khiêu Chiến Nhất Phẩm Đường" </p>
+                                                        <p> 22/04 </p>
+                                                    </div>
+                                                </a>
+                                                <a href="tintuclist.html">
+                                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                                        <p class="max-w-[675px] truncate"> Thông báo Gộp máy chủ S1 "Hoang Đế" và S2 "Hoàng..." </p>
+                                                        <p> 10/04 </p>
+                                                    </div>
+                                                </a>
+                
+                                                <a href="tintuclist.html">
+                                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                                        <p class="max-w-[675px] truncate"> Cập nhật phiên bản 14.5 </p>
+                                                        <p> 22/06 </p>
+                                                    </div>
+                                                </a>
+                                                <a href="tintuclist.html">
+                                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                                        <p class="max-w-[675px] truncate"> Nâng cấp tính năng giao dịch, tăng cường bảo mật rương đồ </p>
+                                                        <p> 16/06 </p>
+                                                    </div>
+                                                </a>
+                                                <a href="tintuclist.html">
+                                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                                        <p class="max-w-[675px] truncate"> Hướng dẫn nâng cấp trang bị thú cưng </p>
+                                                        <p> 11/06 </p>
+                                                    </div>
+                                                </a>
+                                                <a href="tintuclist.html">
+                                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                                        <p class="max-w-[675px] truncate"> Sự kiện "Ngày Hè Sôi Động" </p>
+                                                        <p> 06/06 </p>
+                                                    </div>
+                                                </a>
+                                                <a href="tintuclist.html">
+                                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                                        <p class="max-w-[675px] truncate"> Mở tính năng đăng ký Bang Hội </p>
+                                                        <p> 01/06 </p>
+                                                    </div>
+                                                </a>
+                                                <a href="tintuclist.html">
+                                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                                        <p class="max-w-[675px] truncate"> Máy chủ mới S99 "Thiên Nam Môn" </p>
+                                                        <p> 31/05 </p>
+                                                    </div>
+                                                </a>
+                                                <a href="tintuclist.html">
+                                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                                        <p class="max-w-[675px] truncate"> Mở phó bản mới "Đaị Liêu Kim Tướng" </p>
+                                                        <p> 15/05 </p>
+                                                    </div>
+                                                </a>
+                                                <a href="tintuclist.html">
+                                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                                        <p class="max-w-[675px] truncate"> Nâng cấp tính năng "Sư Đồ" Thêm kỹ năng, thêm v... </p>
+                                                        <p> 06/05 </p>
+                                                    </div>
+                                                </a>
+                                                <a href="tintuclist.html">
+                                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                                        <p class="max-w-[675px] truncate"> Mở phó bản mới "Khiêu Chiến Nhất Phẩm Đường" </p>
+                                                        <p> 22/04 </p>
+                                                    </div>
+                                                </a>
+                                                <a href="tintuclist.html">
+                                                    <div class="flex justify-between border-b border-[#385a54]">  
+                                                        <p class="max-w-[675px] truncate"> Thông báo Gộp máy chủ S1 "Hoang Đế" và S2 "Hoàng..." </p>
+                                                        <p> 10/04 </p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </section>
                                 </div>
                             </div>
@@ -267,27 +389,78 @@
                                 <div id="su-kien">
                                     <section>
                                         <div class="data-container"></div>
-                                        <div id="pagination-sukien"></div>
+                                        <div id="pagination-sukien">
+                                            <div class="board-info flex flex-col gap-3 mt-6">
+                                                <div class="flex justify-between border-b border-[#385a54] cursor-pointer">  
+                                                    <p class="max-w-[675px] truncate"> ${item.title} </p>
+                                                    <p> ${item.date} </p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </section>
                                 </div>
-                            </div>
-                            <div class="carousel-cell">
-                                <div id="tinh-nang">
-                                    <section>
-                                        <div class="data-container"></div>
-                                        <div id="pagination-tinhnang"></div>
-                                    </section>
-                                </div>
-                            </div>
-                            <div class="carousel-cell">
+                            </div><div class="carousel-cell">
                                 <div id="huong-dan">
                                     <section>
                                         <div class="data-container"></div>
-                                        <div id="pagination-huongdan"></div>
+                                        <div id="pagination-huongdan">
+                                            <div class="board-info flex flex-col gap-3 mt-6">
+                                                <div class="flex justify-between border-b border-[#385a54] cursor-pointer">  
+                                                    <p class="max-w-[675px] truncate"> ${item.title} </p>
+                                                    <p> ${item.date} </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div><div class="carousel-cell">
+                                <div id="tinh-nang">
+                                    <section>
+                                        <div class="data-container"></div>
+                                        <div id="pagination-tinhnang">
+                                            <div class="board-info flex flex-col gap-3 mt-6">
+                                                <div class="flex justify-between border-b border-[#385a54] cursor-pointer">  
+                                                    <p class="max-w-[675px] truncate"> ${item.title} </p>
+                                                    <p> ${item.date} </p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </section>
                                 </div>
                             </div>
                         </div>
+                        <div class="paginationjs">
+                            <div class="paginationjs-pages">
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="currentColor" d="M14.121 17.243a.997.997 0 0 1-.707-.293l-4.242-4.243a1 1 0 0 1 0-1.414l4.242-4.243a1 1 0 0 1 1.414 1.414L11.293 12l3.535 3.536a1 1 0 0 1-.707 1.707"/></svg>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p href="">1</p>
+                                    </li>
+                                    <li>
+                                        <p href="">2</p>
+                                    </li>
+                                    <li>
+                                        <p href="">...</p>
+                                    </li>
+                                    <li>
+                                        <p href="">9</p>
+                                    </li>
+                                    <li>
+                                        <p href="">10</p>
+                                    </li>
+                                    <li>
+                                        <p href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="currentColor" d="M9.879 17.243a1 1 0 0 1-.707-1.707L12.707 12L9.172 8.464a1 1 0 0 1 1.414-1.414l4.242 4.243a1 1 0 0 1 0 1.414l-4.242 4.243a.997.997 0 0 1-.707.293"/></svg>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     </div>    
         </div>
 
@@ -301,7 +474,7 @@
                 <img src="resources/img/title_hethong.png" alt="">
             </div>
             <div class="relative h-4/5">
-                <div class="carousel">
+                <div class="carousel"  >
                     <div class="carousel-cell">
                         <img src="./resources/img/tuyet-tinh-coc.png" alt="" id="img-1">
                     </div>
@@ -345,71 +518,72 @@
                         <img src="./resources/img/tinh-tuc.png" alt="" id="img-14">
                     </div>
                 </div>
-                
                 <div class="absolute" id="line">
                     <img src="./resources/img/line.png" alt="">
                 </div>
+                
             </div>
             <div class="sect-button-group flex justify-between text-center mt-14">
                 <button class="sect-button" id="btn-1">
-                    <img src="./resources/img/Rectangle-3.png" alt="" class="ml-3">
+                   
                     <p>Tuyệt <br> Tình <br> Cốc</p>
                 </button>
                 <button class="sect-button" id="btn-2">
-                    <img src="./resources/img/Rectangle-3.png" alt="" class="ml-1">
+                   
                     <p>Đảo <br> Hoa <br> Đào</p>
                 </button>
                 <button class="sect-button" id="btn-3">
-                    <img src="./resources/img/Rectangle-3.png" alt="" class="ml-1.5">
+                    
                     <p>Nga <br> Mi</p>
                 </button>
                 <button class="sect-button" id="btn-4">
-                    <img src="./resources/img/Rectangle-3.png" alt="" class="ml-3">
+                    
                     <p>Cái <br> Bang</p>
                 </button>
                 <button class="sect-button" id="btn-5">
-                    <img src="./resources/img/Rectangle-3.png" alt="" class="ml-1.5">
+                    
                     <p>Quỷ <br> Cốc</p>
                 </button>
                 <button class="sect-button" id="btn-6">
-                    <img src="./resources/img/Rectangle-3.png" alt="" class="ml-4">
+                   
                     <p>Đường <br> Môn</p>
                 </button>
                 <button class="sect-button" id="btn-7">
-                    <img src="./resources/img/Rectangle-3.png" alt="" class="ml-3">
+                    
                     <p>Minh <br> Giáo</p>
                 </button>
                 <button class="sect-button" id="btn-8">
-                    <img src="./resources/img/Rectangle-3.png" alt="" class="ml-3">
+                    
                     <p>Mộ <br> Dung</p>
                 </button>
                 <button class="sect-button" id="btn-9">
-                    <img src="./resources/img/Rectangle-3.png" alt="" class="ml-3">
                     <p>Thiếu <br> Lâm</p>
                 </button>
                 <button class="sect-button" id="btn-10">
-                    <img src="./resources/img/Rectangle-3.png" alt="" class="ml-3.5">
+                  
                     <p>Thiên <br> Long</p>
                 </button>
                 <button class="sect-button" id="btn-11">
-                    <img src="./resources/img/Rectangle-3.png" alt="" class="ml-3.5">
+                    
                     <p>Thiên <br> Sơn</p>
                 </button>
                 <button class="sect-button" id="btn-12">
-                    <img src="./resources/img/Rectangle-3.png" alt="" class="ml-2.5">
+                    
                     <p>Võ <br> Đang</p>
                 </button>
                 <button class="sect-button" id="btn-13">
-                    <img src="./resources/img/Rectangle-3.png" alt="" class="ml-2">
+                    
                     <p>Tiêu <br> Giao</p>
                 </button>
                 <button class="sect-button" id="btn-14">
-                    <img src="./resources/img/Rectangle-3.png" alt="" class="ml-2">
+                   
                     <p>Tinh <br> Túc</p>
                 </button>
             </div>
             
         </div>
+        
+            
     </main>
     <footer class="mt-[40rem] relative w-full justify-center">
         <div class="">
@@ -433,11 +607,13 @@
         </div>
         
     </footer>
+    
+   
+    <!-- <script src="./resources/js/style.js"></script> -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="./resources/js/flickyti.js"></script>
-    <script src="./resources/js/style.js"></script>
     <script src="./resources/js/main.js"></script>
-    <script src="./resources/js/Swipper.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="./resources/js/flickyti.js"></script>
+    
 </body>
 </html>
