@@ -40,7 +40,22 @@ ul, li {
     text-align: center;
     cursor: pointer;
 }
+.paginationjs .paginationjs-pages li > p {
+    width: 45px;
+    height: 45px;
+    font-weight: 500;
+    display: block;
+    font-size: 30px;
+    color: #385a54;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
 .paginationjs .paginationjs-pages li > a:hover {
+    color: white;
+    background: #385a54;
+}
+.paginationjs .paginationjs-pages li > p:hover {
     color: white;
     background: #385a54;
 }

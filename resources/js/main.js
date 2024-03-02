@@ -9,12 +9,23 @@ function openside() {
         document.getElementById("close-open").style.transform = "rotate(180deg)";
     }
 }
-function hamburgerBtn() {
-    const menuWidth = document.getElementById("hamburger").style.transform;
+// function hamburgerBtn() {
+//     const menuWidth = document.getElementById("hamburger").style.transform;
 
-    if (menuWidth == "translateX(500px)") {
-        document.getElementById("hamburger").style.transform = "translateX(0)";
+//     if (menuWidth == "translateX(500px)") {
+//         document.getElementById("hamburger").style.transform = "translateX(0)";
+//     } else {
+//         document.getElementById("hamburger").style.transform = "translateX(500px)";
+//     }
+// }
+function hamburgerBtn() {
+    const menuWidth = document.getElementById("hamburger").style.display;
+
+    if (menuWidth == "block") {
+        document.getElementById("hamburger").style.display = "none";
+        document.getElementById("hamburger").style.transform = "translateX(100%)";
     } else {
-        document.getElementById("hamburger").style.transform = "translateX(500px)";
+        document.getElementById("hamburger").style.display = "block";
+        document.getElementById("hamburger").style.transform = "translateX(0%)";   
     }
 }

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resources/css/responsive.css">
-    <link rel="stylesheet" href="/resources/css/main.css">
     <link rel="stylesheet" href="/resources/css/style.css">
+    <link rel="stylesheet" href="/resources/css/main.css">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -26,11 +27,12 @@
         <!-- <img src="./resources/img/" alt="" class="side-btn"> -->
         <img src="./resources/img/btn_tảigoogleplay.png" alt="" class="side-btn">
         <img src="./resources/img/btn_applestr_mb.png" alt="" class="side-btn">
+        <img src="./resources/img/btn_dknhanh.png" alt="" class="side-btn">
     </div>
     <header>
         <nav class="navbar">
             <img src="./resources/img/logo_icon.png" alt="" id="logo-mobi">
-            <div class="mobi-btn gap-8 ml-4">
+            <div class="mobi-btn ">
                 <img src="./resources/img/mb_nav_btn_download.jpg" alt="" class="button">
                 <img src="./resources/img/mb_nav_btn_regist.jpg" alt="" class="button">
             </div>
@@ -60,7 +62,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="header-bg"></div>
+            
             <div class="header-left">
                 <a href="home.html" class="">Trang chủ</a>
                 <a href="tintuc.html" class="">Tin tức</a>
@@ -73,9 +75,11 @@
                 <a href="#" class="">1900 988961</a>
             </div>
         </nav>
+        <div class="header-bg"></div>
     </header>
-    
-    <main class="mt-96">
+    <main >
+        <div class="bg-content">
+            <div class="container-content">
         <div class="banner">
             <div class="flex gap-4">
                 <div class=" gap-4">
@@ -84,7 +88,7 @@
                     </div>
                     <div class="btn-group relative mt-3">
                         <img src="./resources/img/btn-group.png" alt="" class="h-full">
-                        <div class="absolute top-0 left-0 flex-col items-center h-full">
+                        <div class="absolute top-0 left-0 flex-col items-center h-full btn-left-group ">
                             <button class="px-5 h-1/4 gap-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 1280 1536">
                                     <path fill="white" d="M1280 1271q0 109-62.5 187t-150.5 78H213q-88 0-150.5-78T0 1271q0-85 8.5-160.5t31.5-152t58.5-131t94-89T327 704q131 128 313 128t313-128q76 0 134.5 34.5t94 89t58.5 131t31.5 152t8.5 160.5m-256-887q0 159-112.5 271.5T640 768T368.5 655.5T256 384t112.5-271.5T640 0t271.5 112.5T1024 384"/>
@@ -115,34 +119,45 @@
 
                 <div class="main-carousel w-[740px]">
                     <div class="carousel-cell ">
+                        <a href="">
                         <img class="w-full" src="resources/img/banner_tintuc.png" alt="" >
+                        </a>
                     </div>
                     <div class="carousel-cell">
-                        <img class="" src="resources/img/banner_tintuc.png" alt="">
+                        <a href="">
+                        <img class="w-full" src="resources/img/banner_tintuc.png" alt="" >
+                        </a>
                     </div>
                     <div class="carousel-cell">
-                        <img class="" src="resources/img/banner_tintuc.png" alt="">
+                        <a href="">
+                        <img class="w-full" src="resources/img/banner_tintuc.png" alt="" >
+                        </a>
                     </div>
                     <div class="carousel-cell">
-                        <img class="" src="resources/img/banner_tintuc.png" alt="">
+                        <a href="">
+                        <img class="w-full" src="resources/img/banner_tintuc.png" alt="" >
+                        </a>
                     </div>
                     <div class="carousel-cell">
-                        <img class="" src="resources/img/banner_tintuc.png" alt="">
+                        <a href="">
+                        <img class="w-full" src="resources/img/banner_tintuc.png" alt="" >
+                        </a>
                     </div>
                     <div class="carousel-cell">
-                        <img class="" src="resources/img/banner_tintuc.png" alt="">
+                        <a href="">
+                        <img class="w-full" src="resources/img/banner_tintuc.png" alt="" >
+                        </a>
                     </div> 
                 </div>
                 <div class="" id="dang-ky">
                     <img class="" src="./resources/img/banner-event.png" alt="">
                 </div>
             </div>
-
             <div class="flex gap-4 mt-4">
                 <div class="btn_group relative">
                     <img class="h-full w-full" src="./resources/img/btn-group.png" alt="">
                     <div class="btn-group">
-                        <div class="absolute top-0 left-0 flex-col items-center w-full h-full">
+                        <div class="absolute top-0 left-0 flex-col items-center w-full h-full btn-left-group ">
                             <button class="px-5 h-1/4 gap-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
                                     <path fill="white" d="M3.783 2.826L12 1l8.217 1.826a1 1 0 0 1 .783.976v9.987a6 6 0 0 1-2.672 4.992L12 23l-6.328-4.219A6 6 0 0 1 3 13.79V3.802a1 1 0 0 1 .783-.976M13 10V5l-5 7h3v5l5-7z"/>
@@ -179,7 +194,7 @@
                         <img class="" src="./resources/img/btn_hinhanhgame.png" alt="">
                     </div>
                     <div>
-                        <img class="mt-[6.25%]" src="./resources/img/img_mxh.png" alt="">
+                        <img class="mt-[7.25%]" src="./resources/img/img_mxh.png" alt="">
                     </div>
                 </div>
             </div>
@@ -319,67 +334,6 @@
                                                         <p> 10/04 </p>
                                                     </div>
                                                 </a>
-                
-                                                <a href="tintuclist.html">
-                                                    <div class="flex justify-between border-b border-[#385a54]">  
-                                                        <p class="max-w-[675px] truncate"> Cập nhật phiên bản 14.5 </p>
-                                                        <p> 22/06 </p>
-                                                    </div>
-                                                </a>
-                                                <a href="tintuclist.html">
-                                                    <div class="flex justify-between border-b border-[#385a54]">  
-                                                        <p class="max-w-[675px] truncate"> Nâng cấp tính năng giao dịch, tăng cường bảo mật rương đồ </p>
-                                                        <p> 16/06 </p>
-                                                    </div>
-                                                </a>
-                                                <a href="tintuclist.html">
-                                                    <div class="flex justify-between border-b border-[#385a54]">  
-                                                        <p class="max-w-[675px] truncate"> Hướng dẫn nâng cấp trang bị thú cưng </p>
-                                                        <p> 11/06 </p>
-                                                    </div>
-                                                </a>
-                                                <a href="tintuclist.html">
-                                                    <div class="flex justify-between border-b border-[#385a54]">  
-                                                        <p class="max-w-[675px] truncate"> Sự kiện "Ngày Hè Sôi Động" </p>
-                                                        <p> 06/06 </p>
-                                                    </div>
-                                                </a>
-                                                <a href="tintuclist.html">
-                                                    <div class="flex justify-between border-b border-[#385a54]">  
-                                                        <p class="max-w-[675px] truncate"> Mở tính năng đăng ký Bang Hội </p>
-                                                        <p> 01/06 </p>
-                                                    </div>
-                                                </a>
-                                                <a href="tintuclist.html">
-                                                    <div class="flex justify-between border-b border-[#385a54]">  
-                                                        <p class="max-w-[675px] truncate"> Máy chủ mới S99 "Thiên Nam Môn" </p>
-                                                        <p> 31/05 </p>
-                                                    </div>
-                                                </a>
-                                                <a href="tintuclist.html">
-                                                    <div class="flex justify-between border-b border-[#385a54]">  
-                                                        <p class="max-w-[675px] truncate"> Mở phó bản mới "Đaị Liêu Kim Tướng" </p>
-                                                        <p> 15/05 </p>
-                                                    </div>
-                                                </a>
-                                                <a href="tintuclist.html">
-                                                    <div class="flex justify-between border-b border-[#385a54]">  
-                                                        <p class="max-w-[675px] truncate"> Nâng cấp tính năng "Sư Đồ" Thêm kỹ năng, thêm v... </p>
-                                                        <p> 06/05 </p>
-                                                    </div>
-                                                </a>
-                                                <a href="tintuclist.html">
-                                                    <div class="flex justify-between border-b border-[#385a54]">  
-                                                        <p class="max-w-[675px] truncate"> Mở phó bản mới "Khiêu Chiến Nhất Phẩm Đường" </p>
-                                                        <p> 22/04 </p>
-                                                    </div>
-                                                </a>
-                                                <a href="tintuclist.html">
-                                                    <div class="flex justify-between border-b border-[#385a54]">  
-                                                        <p class="max-w-[675px] truncate"> Thông báo Gộp máy chủ S1 "Hoang Đế" và S2 "Hoàng..." </p>
-                                                        <p> 10/04 </p>
-                                                    </div>
-                                                </a>
                                             </div>
                                         </div>
                                     </section>
@@ -463,8 +417,6 @@
                     </div>
                     </div>    
         </div>
-
-
         <div id="sect">
             <div class="title_hethong">
                 <!-- <img src="./resources/img/collapse-content-line.png" alt="">
@@ -582,33 +534,45 @@
             </div>
             
         </div>
-        
-            
-    </main>
+    </div> 
     <footer class="mt-[40rem] relative w-full justify-center">
-        <div class="">
-            <p>
-                Phát hành bởi Efun Corp
-                <br> Hotline: 1900 988961
-                <br> Email: support@efun.vn
-                <br> Địa chỉ: Số 19, 16A1, Làng Việt Kiều Châu Âu, Phường Mỗ Lao, Quận Hà Đông, Hà Nội, Việt Nam
-                <br> Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng: 25/QĐ-BC do Bộ Thông tin và Truyền thông cấp ngày 27/10/2006.
-                <br> Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 251/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/6/2015.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-2 w-7/12 absolute top-0 left-80">
-            <div class="flex">
-                <img src="./resources/img/Artboard.png" alt="" id="block18" class="mt-4">
-                <img src="./resources/img/logo_thienlong.png" alt="" id="footer-logo" class="">
+        <div class="footer-pc">
+            <img src="./resources/img/block18.png" alt="" id="block18">
+            <img src="./resources/img/logo_thienlong.png" alt="" id="footer-logo">
+            <img src="./resources/img/Artboard.png" alt="" id="artboard">
+            <div class="flex w-full justify-center ">
+                <p>
+                    Phát hành bởi Efun Corp
+                    <br> Hotline: 1900 988961
+                    <br> Email: support@efun.vn
+                    <br> Địa chỉ: Số 19, 16A1, Làng Việt Kiều Châu Âu, Phường Mỗ Lao, Quận Hà Đông, Hà Nội, Việt Nam
+                    <br> Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng: 25/QĐ-BC do Bộ Thông tin và Truyền thông cấp ngày 27/10/2006.
+                    <br> Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 251/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/6/2015.
+                </p>
             </div>
-            
-            <img src="./resources/img/Artboard.png" alt="" id="artboard" class="justify-self-end">
-        </div>
+                </div>
+
+                <div class="footer-mobi grid center justify-items-center">
+            <img src="./resources/img/logo_thienlong.png" alt="" id="footer-logo-mobi">
+            <img src="./resources/img/block18.png" alt="" id="footer-block18-mobi">
+            <div class="flex w-full justify-center ">
+                <p>
+                    Phát hành bởi Efun Corp
+                    <br> Hotline: 1900 988961
+                    <br> Email: support@efun.vn
+                    <br> Địa chỉ: Số 19, 16A1, Làng Việt Kiều Châu Âu, Phường Mỗ Lao, Quận Hà Đông, Hà Nội, Việt Nam
+                    <br> Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng: 25/QĐ-BC do Bộ Thông tin và Truyền thông cấp ngày 27/10/2006.
+                    <br> Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 251/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/6/2015.
+                </p>
+            </div>
+                </div>
         
     </footer>
     
-   
+</div>
+
+        
+</main>
     <!-- <script src="./resources/js/style.js"></script> -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="./resources/js/main.js"></script>

@@ -8,7 +8,7 @@
 @media screen and (max-width: 1150px) {
     .navbar {
         width: 100%;
-        height: 13.672vw !important;
+        height: 10vw !important;
         background-color: #00000093;
         position: fixed;
         top: 0;
@@ -26,6 +26,8 @@
     }
     .mobi-btn {
         display: flex !important;
+        margin-left: 2vw;
+        gap: 2vw;
     }
     .btn_mb_nav li img {
         width: 100%;
@@ -40,18 +42,7 @@
         display: block !important;
     }
     .hamburger-menu{
-        display: flex !important;
-        position: fixed !important;
-        background-color: #00000093;
-        position: absolute;
-        flex-direction: column;
-        width: 40vw;
-        top: 13.672vw;
-        right: -40vw;
         border: 1px solid #000;
-        padding: 0 0;
-        z-index: 3;
-        transition: all .3s;
     }
     .banner {
         display: none !important;
@@ -87,8 +78,22 @@
     }
     #news-mobi .news-carousel {
         display: block;
-        padding-top: 6%;
+        padding-top: 8%;
         width: 100%;
+    }
+    #news-head-mobi {
+        background-image: url(../img/bang-tin-tuc.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: 3.5%;
+        margin-right: 3.5%;
+        justify-content: space-around;
+        height: 10vw;
+    }
+    #news-head-page {
+        height: 9vw !important;
+        width: 100vw !important;
     }
     .board-select{
         all: unset !important;
@@ -100,16 +105,19 @@
         display: none !important;
     }
     footer p {
-        font-size: 1.8vw;
+        font-size: 1.8vw !important;
     }
     .footer-pc {
         display: none !important;
     }
-    .footer-mobi{
-        display: flex !important;
-    }
     .news-btn-page{
         display: none !important;
+    }
+    #sect .flickity-page-dots {
+        display: none !important;
+    }
+    .footer-mobi {
+        display: grid !important;
     }
 }
 @media screen and (max-width: 950px) {
@@ -117,7 +125,7 @@
         display: none;
     }
     .board-select h6 {
-        font-size: 2vw;
+        font-size: 2vw !important;
     }
     .board-info p {
         font-size: 2.5vw;
@@ -128,7 +136,7 @@
         font-size: 2.5vw !important;
     }
     #news-board-page #tin-tuc p {
-        font-size: 20px;
+        font-size: 20px !important;
     }
     #news-detail-board-page h1 {
         font-size: 22px;
@@ -140,21 +148,24 @@
         font-size: 18px;
     }
     .board-detail {
-        width: 95% !important;
+        width: 95% ;
+    }
+    .footer-mobi {
+        display: flex !important;
     }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 849px) {
     .footer-mobi {
         display: grid !important;
     }
     .footer-pc {
-        display: none;
+        display: none !important;
     }
     #news-head-page h6 {
-        font-size: 15px;
+        font-size: 15px !important  ;
     }
     #news-board-page #tin-tuc p {
-        font-size: 2.5vw;
+        font-size: 2.5vw !important;
     }
 }
 @media screen and (max-width: 650px) {
@@ -209,7 +220,7 @@
         margin-top: 1rem !important;
     }
     #news-head-page h6 {
-        font-size: 2.5vw;
+        font-size: 2.5vw !important;
     }
     #news-detail-board-page h1 {
         font-size: 16px;
@@ -224,7 +235,7 @@
         min-height: 200vw;
     }
     .hamburger-btn img {
-        width: 70%;
+        width: 70% ;
     }
     .hamburger-menu ul li a {
         font-size: 18px;
