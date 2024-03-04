@@ -6,15 +6,14 @@
 body {
     overflow-x: hidden;
 }
-/* body {
-    background-image: url("../img/bg.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100% 100%;
-   
+#content {
+    justify-content: center;
+    align-items: center;
     align-content: center;
     justify-items: center;
-} */
+    overflow: hidden;
+    width: 100%;
+}
 header {
     background: url("../img/bg_header.jpg");
     background-repeat: no-repeat;
@@ -79,9 +78,7 @@ header {
     justify-content: center;
     align-items: center;
 }
-.flex{
-    display: flex;
-}
+
 ul,
 li {
     list-style: none;
@@ -144,7 +141,7 @@ li {
     color: #f1f3b5;
 }
 /*-- Content --*/
-main {
+.main {
     width: 100vw;
 }
 .bg-content {
@@ -339,20 +336,33 @@ main {
     font-size: 30px;
     color: #385a54;
     text-transform: uppercase;
+    text-align: center;
 }
 .board-info p {
-    font-family: 'Maitree', serif !important;
+    font-family: 'Maitree', serif ;
     font-weight: 600;
-    font-size: 25px !important;
+    font-size: 25px ;
     color: #385a54;
+    cursor: pointer;
+}
+.board-info div:hover {
+    margin-left: 10px;
+    transition: 80ms;
 }
 .board-button {
-    padding-top: 10px;
+    padding-top: 1.5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.board-button img {
+    width: 12vw;
+}
+#news-head-page button img,
+.news-board button img {
+    visibility: hidden;
+}  
 #tin-tuc,
 #su-kien,
 #tinh-nang,
@@ -502,35 +512,7 @@ main {
 #sect .flickity-page-dots li:nth-child(14) {
     margin-left: 51px;
 }
-/*-- Footer --*/
-footer {
-    max-width: 85vw;
-    margin-top: 30vw;
-}
-footer p {
-    font-family: 'Cabin Condensed', sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 30px;
-}
-#block18 {
-    position: absolute;
-    width: 18%;
-    top: -2%;
-    left: -3%;
-}
-#footer-logo {
-    position: absolute;
-    width: 26%;
-    top: -13%;
-    left: 15%;
-}
-#artboard {
-    position: absolute;
-    width: 16%;
-    top: -2%;
-    right: 25%;
-}
+
 /*-- Trang-Chu-Responsive --*/
 @media screen and (max-width: 1200px) {
     
@@ -561,11 +543,6 @@ footer p {
 #board-paginate {
     max-width: 900px;
 }
-.test {
-    display: grid;
-    flex-direction: column;
-    justify-items: right;
-}
 
 #news-detail h1 {
     font-family: 'Maitree', serif;
@@ -587,28 +564,22 @@ footer p {
 .box_tintuc_img{
     max-width: 100%;
 }
-.list_new {
-    padding-left: 16.5rem;
-}
 
 /* PAGE TINTUC */
-#news-head-page button img,
-.news-board button img {
-    visibility: hidden;
-}  
+
 #news-head-page {
     background-image: url(../img/bang-tin-tuc.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 10vw;
+    height: 7vw;
     justify-content: space-around;
     
 }
 #news-head-page h6 {
     font-family: 'Maitree', serif;
     font-weight: 600;
-    font-size: 1.5vw;
+    font-size: 25px;
     color: #385a54;
     text-transform: uppercase;
     text-align: center;
@@ -665,8 +636,37 @@ footer p {
     text-align: left;
 }
 /* footer */
+
+footer {
+    max-width: 85vw;
+    margin-top: 30vw;
+}
+footer p {
+    font-family: 'Cabin Condensed', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+#block18 {
+    position: absolute;
+    width: 18%;
+    top: -2%;
+    left: -3%;
+}
+#footer-logo {
+    position: absolute;
+    width: 26%;
+    top: -13%;
+    left: 15%;
+}
+#artboard {
+    position: absolute;
+    width: 16%;
+    top: -2%;
+    right: 25%;
+}
 .footer-mobi {
-    display: none ;
+    display: none !important;
 }
 #footer-logo-mobi {
     width: 23vw;

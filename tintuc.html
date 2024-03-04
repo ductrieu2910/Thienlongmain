@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="http://tlo.efun.vn/assets/resources/images/32.png">
-    <link rel="stylesheet" href="resources/css/responsive.css">
     <link rel="stylesheet" href="/resources/css/style.css">
     <link rel="stylesheet" href="/resources/css/main.css">
+    <link rel="stylesheet" href="/resources/css/responsive.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -16,7 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@600&family=Maitree:wght@600&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
     <title>Trang Chủ</title>
 </head>
-<body class="grid">
+<body>
+    <div class="grid w-full" id="content">
     <div id="mySidenav" class="sidenav">
         <a class="" onclick="openside()">
             <img src="./resources/img/btn-side-nav.png" alt="" id="close-open">
@@ -64,7 +65,7 @@
             <div class="header-bg"></div>
             <div class="header-left">
                 <a href="home.html" class="">Trang chủ</a>
-                <a href="tintuc.html" class="">Tin tức</a>
+                <a href="tintuc.html#news_tintuc" class="">Tin tức</a>
                 <a href="#" class="">Đăng ký tài khoản</a>
             </div>
             <img src="./resources/img/logo_thienlong.png" alt="logo" id="logo"/>
@@ -81,7 +82,7 @@
                 <!-- News -->
         <div id="news_tintuc">
             <div class="" id="news-title">
-                <img src="./resources/img/title_tintuc.png" alt="">
+                <img src="./resources/img/title_tintuc_new.png" alt="">
             </div>
         <div class="flex justify-center">
             <div class="news-btn-page">
@@ -377,6 +378,7 @@
     
 </div>
 </main>
+    </div>
     <!-- <script src="./resources/js/style.js"></script> -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="./resources/js/main.js"></script>

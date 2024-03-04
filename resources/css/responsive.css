@@ -4,6 +4,9 @@
     height: 59.143vw;
     padding: 1.6vw 0 0 1.6vw;
 }
+footer p {
+    font-size: 22px;
+}
 }
 @media screen and (max-width: 1150px) {
     .navbar {
@@ -91,10 +94,14 @@
         justify-content: space-around;
         height: 10vw;
     }
+    #news-head-page h6 {
+        font-size: 20px !important;
+    }
     #news-head-page {
         height: 9vw !important;
-        width: 100vw !important;
+       
     }
+    
     .board-select{
         all: unset !important;
     }
@@ -107,18 +114,13 @@
     footer p {
         font-size: 1.8vw !important;
     }
-    .footer-pc {
-        display: none !important;
-    }
     .news-btn-page{
         display: none !important;
     }
     #sect .flickity-page-dots {
         display: none !important;
     }
-    .footer-mobi {
-        display: grid !important;
-    }
+    
 }
 @media screen and (max-width: 950px) {
     .news-btn-page {
@@ -128,7 +130,7 @@
         font-size: 2vw !important;
     }
     .board-info p {
-        font-size: 2.5vw;
+        font-size: 2.5vw !important;
     }
     .paginationjs .paginationjs-pages li > p {
         width: 3.5vw !important;
@@ -139,27 +141,24 @@
         font-size: 20px !important;
     }
     #news-detail-board-page h1 {
-        font-size: 22px;
+        font-size: 22px !important;
     }
     #news-detail-board-page p {
-        font-size: 18px;
+        font-size: 18px !important;
     }
     #news-detail-board-page span {
-        font-size: 18px;
+        font-size: 18px p !important;
     }
     .board-detail {
         width: 95% ;
     }
-    .footer-mobi {
-        display: flex !important;
-    }
 }
-@media screen and (max-width: 849px) {
+@media screen and (max-width: 850px) {
     .footer-mobi {
         display: grid !important;
     }
     .footer-pc {
-        display: none !important;
+        display: none ;
     }
     #news-head-page h6 {
         font-size: 15px !important  ;
@@ -170,30 +169,30 @@
 }
 @media screen and (max-width: 650px) {
     #news-detail-board-page h1 {
-        font-size: 20px;
+        font-size: 20px !important;
     }
     #news-detail-board-page p {
-        font-size: 16px;
+        font-size: 16px !important;
     }
     #news-detail-board-page span {
-        font-size: 16px;
+        font-size: 16px !important;
     }
     .hamburger-menu ul li a {
-        font-size: 20px;
+        font-size: 20px !important;
     }
 }
 @media screen and (max-width: 550px) {
     #news-detail-board-page h1 {
-        font-size: 18px;
+        font-size: 18px !important;
     }
     #news-detail-board-page p {
-        font-size: 14px;
+        font-size: 14px !important;
     }
     #news-detail-board-page span {
-        font-size: 14px;
+        font-size: 14px !important;
     }
     #news-detail-board-page {
-        min-height: 160vw;
+        height: 160vw !important;
     }
 }
 @media screen and (max-width: 450px) {
@@ -201,10 +200,10 @@
         margin-right: 0 !important;
     }
     .paginationjs {
-        margin-top: 2vw;
+        margin-top: 2vw !important ;
     }
     .board-select h6 {
-        padding-top: 0;
+        padding-top: 0 !important;
     }
     #news-mobi .flickity-page-dots .dot.is-selected {
         background-size: 0.45rem 0.45rem 
@@ -223,43 +222,43 @@
         font-size: 2.5vw !important;
     }
     #news-detail-board-page h1 {
-        font-size: 16px;
+        font-size: 16px !important;
     }
     #news-detail-board-page p {
-        font-size: 12px;
+        font-size: 12px !important;
     }
     #news-detail-board-page span {
-        font-size: 12px;
+        font-size: 12px !important;
     }
     #news-detail-board-page {
-        min-height: 200vw;
+        height: 200vw !important;
     }
     .hamburger-btn img {
         width: 70% ;
     }
     .hamburger-menu ul li a {
-        font-size: 18px;
+        font-size: 18px !important;
     }
 }
 @media screen and (max-width: 350px) {
     #news-detail-board-page h1 {
-        font-size: 14px;
+        font-size: 14px !important;
     }
     #news-detail-board-page p {
-        font-size: 10px;
+        font-size: 10px !important;
     }
     #news-detail-board-page span {
-        font-size: 10px;
+        font-size: 10px !important;
     }
     #news-detail-board-page {
-        min-height: 280vw;
+        height: 280vw !important;
     }
     .hamburger-menu ul li a {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 }
 @media screen and (max-width: 250px) {
     #news-detail-board-page {
-        min-height: 400vw;
+        height: 400vw !important;
     }
 }

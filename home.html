@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="http://tlo.efun.vn/assets/resources/images/32.png">
-    <link rel="stylesheet" href="resources/css/responsive.css">
     <link rel="stylesheet" href="/resources/css/style.css">
+    
     <link rel="stylesheet" href="/resources/css/main.css">
+    <link rel="stylesheet" href="/resources/css/responsive.css">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@600&family=Maitree:wght@600&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
     <title>Trang Chủ</title>
 </head>
-<body class="grid">
+<body>
+    <div class="grid w-full" id="content">
     <div id="mySidenav" class="sidenav">
         <a class="" onclick="openside()">
             <img src="./resources/img/btn-side-nav.png" alt="" id="close-open">
@@ -65,8 +66,8 @@
             </div>
             
             <div class="header-left">
-                <a href="home.html" class="">Trang chủ</a>
-                <a href="tintuc.html" class="">Tin tức</a>
+                <a href="home.html#banner" class="">Trang chủ</a>
+                <a href="tintuc.html#news_tintuc" class="">Tin tức</a>
                 <a href="#" class="">Đăng ký tài khoản</a>
             </div>
             <img src="./resources/img/logo_thienlong.png" alt="logo" id="logo"/>
@@ -78,7 +79,7 @@
         </nav>
         <div class="header-bg"></div>
     </header>
-    <main >
+    <main class="main" >
         <div class="bg-content">
             <div class="container-content">
         <div class="banner">
@@ -217,34 +218,31 @@
                 </div>
             </div>
         </div>
-        <div id="news" class="mt-20">
-            <div class="title_tintuc" >
+        <div id="news" class="mt-[3vw]">
+            <div class="title_tintuc mb-[2vw]" >
                 <img class="text-center" src="./resources/img/title_tintuc.png" alt="">
                 <!-- <h3 class="text-center">Tin tức <span>&</span> Sự kiện</h3>
                 <img class="rotate-180" src="./resources/img/collapse-content-line.png" alt=""> -->
             </div>
 
             <div class="news-board relative">
-                    <!-- <div>
-                        <img src="./resources/img/box.png" alt="">
-                    </div> -->
-                    <div class="board-select flex-col top-[5%] right-[5%]  list_new" > 
-                        <div class="flex justify-between mt-6 board-btn-group" id="news_board_mobi">
+                    <div class="board-select flex-col top-[5%] right-[5%]" > 
+                        <div class="news-button-group flex justify-between mt-4 board-btn-group" id="news_board_mobi">
                             <button class="board-button" id="btn-1">
                                 <h6>TIN TỨC</h6>
                                 <img src="./resources/img/Component.svg" alt="" id="btn-img-1">
                             </button>
                             <button class="board-button" id="btn-2">
                                 <h6>SỰ KIỆN</h6>
-                                <img src="./resources/img/Component.svg" alt="" id="btn-img-1">
+                                <img src="./resources/img/Component.svg" alt="" id="btn-img-2">
                             </button>
                             <button class="board-button" id="btn-3">
                                 <h6>TÍNH NĂNG</h6>
-                                <img src="./resources/img/Component.svg" alt="" id="btn-img-1">
+                                <img src="./resources/img/Component.svg" alt="" id="btn-img-3">
                             </button>
                             <button class="board-button" id="btn-4">
                                 <h6>HƯỚNG DẪN</h6>
-                                <img src="./resources/img/Component.svg" alt="" id="btn-img-1">
+                                <img src="./resources/img/Component.svg" alt="" id="btn-img-4">
                             </button>
                         </div>
                         <div id="news-mobi">
@@ -347,8 +345,8 @@
                                         <div id="pagination-sukien">
                                             <div class="board-info flex flex-col gap-3 mt-6">
                                                 <div class="flex justify-between border-b border-[#385a54] cursor-pointer">  
-                                                    <p class="max-w-[675px] truncate"> ${item.title} </p>
-                                                    <p> ${item.date} </p>
+                                                    <p class="max-w-[675px] truncate"> SU KIEN </p>
+                                                    <p> 4/3s </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -361,8 +359,8 @@
                                         <div id="pagination-huongdan">
                                             <div class="board-info flex flex-col gap-3 mt-6">
                                                 <div class="flex justify-between border-b border-[#385a54] cursor-pointer">  
-                                                    <p class="max-w-[675px] truncate"> ${item.title} </p>
-                                                    <p> ${item.date} </p>
+                                                    <p class="max-w-[675px] truncate"> HUONG DAN </p>
+                                                    <p> 4/3 </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -375,8 +373,8 @@
                                         <div id="pagination-tinhnang">
                                             <div class="board-info flex flex-col gap-3 mt-6">
                                                 <div class="flex justify-between border-b border-[#385a54] cursor-pointer">  
-                                                    <p class="max-w-[675px] truncate"> ${item.title} </p>
-                                                    <p> ${item.date} </p>
+                                                    <p class="max-w-[675px] truncate">TINH NANG </p>
+                                                    <p> 4/3 </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -416,17 +414,14 @@
                             </div>
                         </div>
                     </div>
-                    </div>    
+                    </div> 
+                </div>    
         </div>
-        <div id="sect">
-            <div class="title_hethong">
-                <!-- <img src="./resources/img/collapse-content-line.png" alt="">
-                <h1 class="text-center">Hệ Thống Môn Phái</h1>
-                <img class="rotate-180" src="./resources/img/collapse-content-line.png" alt="">
-                 -->
+        <div id="sect" class="mt-[3vw]">
+            <div class="title_hethong mb-[2vw]">
                 <img src="resources/img/title_hethong.png" alt="">
             </div>
-            <div class="relative h-4/5">
+            <div class="mt-5 relative h-full">
                 <div class="carousel"  >
                     <div class="carousel-cell">
                         <img src="./resources/img/tuyet-tinh-coc.png" alt="" id="img-1">
@@ -472,13 +467,12 @@
                     </div>
                 </div>
                 <div class="absolute" id="line">
-                    <img src="./resources/img/line.png" alt="">
+                    <img class="w-full" src="./resources/img/line.png" alt="">
                 </div>
                 
             </div>
             <div class="sect-button-group flex justify-between text-center mt-14">
                 <button class="sect-button" id="btn-1">
-                   
                     <p>Tuyệt <br> Tình <br> Cốc</p>
                 </button>
                 <button class="sect-button" id="btn-2">
@@ -533,10 +527,9 @@
                     <p>Tinh <br> Túc</p>
                 </button>
             </div>
-            
         </div>
-    </div> 
-    <footer class="mt-[40rem] relative w-full justify-center">
+    </div>
+        <footer class="relative flex">
         <div class="footer-pc">
             <img src="./resources/img/block18.png" alt="" id="block18">
             <img src="./resources/img/logo_thienlong.png" alt="" id="footer-logo">
@@ -551,11 +544,11 @@
                     <br> Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 251/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/6/2015.
                 </p>
             </div>
-                </div>
+        </div>
 
-                <div class="footer-mobi grid center justify-items-center">
-            <img src="./resources/img/logo_thienlong.png" alt="" id="footer-logo-mobi">
-            <img src="./resources/img/block18.png" alt="" id="footer-block18-mobi">
+            <div class="footer-mobi grid justify-items-center">
+                <img src="./resources/img/logo_thienlong.png" alt="" id="footer-logo-mobi">
+                <img src="./resources/img/block18.png" alt="" id="footer-block18-mobi">
             <div class="flex w-full justify-center ">
                 <p>
                     Phát hành bởi Efun Corp
@@ -566,19 +559,18 @@
                     <br> Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 251/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/6/2015.
                 </p>
             </div>
-                </div>
-        
+            </div>
     </footer>
     
 </div>
 
-        
 </main>
-    <!-- <script src="./resources/js/style.js"></script> -->
+</div>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./resources/js/flickyti.js"></script>
     <script src="./resources/js/main.js"></script>
     
-    <script src="./resources/js/flickyti.js"></script>
+   
     
 </body>
 </html>
