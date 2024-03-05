@@ -48,19 +48,4 @@ $('.news-button-group').on( 'click', '.board-button', function() {
     $carouselBtn.flickity( 'select', index );
 });
 
-$('.carousel-main1').flickity({
-    cellAlign: 'center',
-    freeScroll: false,
-    prevNextButtons: false,
-    draggable: false,
-    pageDots: false,
-    wrapAround: true,
-    autoPlay:false,
-});
-var $carouselBtn = $('.carousel-main1').flickity();
-$('.news-button-group').on( 'click', '.board-button', function() {
-    var index = $(this).index();
-    console.log(index);
-    $carouselBtn.flickity( 'select', index );
-});
 

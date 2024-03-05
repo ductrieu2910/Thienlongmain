@@ -5,7 +5,7 @@
     padding: 1.6vw 0 0 1.6vw;
 }
 footer p {
-    font-size: 22px;
+    font-size: 19px ;
 }
 }
 @media screen and (max-width: 1150px) {
@@ -112,7 +112,7 @@ footer p {
         display: none !important;
     }
     footer p {
-        font-size: 1.8vw !important;
+        font-size: 1.5vw;
     }
     .news-btn-page{
         display: none !important;
@@ -178,7 +178,7 @@ footer p {
         font-size: 16px !important;
     }
     .hamburger-menu ul li a {
-        font-size: 20px !important;
+        font-size: 14px !important;
     }
 }
 @media screen and (max-width: 550px) {
@@ -237,7 +237,7 @@ footer p {
         width: 70% ;
     }
     .hamburger-menu ul li a {
-        font-size: 18px !important;
+        font-size: 12px !important;
     }
 }
 @media screen and (max-width: 350px) {
@@ -254,7 +254,7 @@ footer p {
         height: 280vw !important;
     }
     .hamburger-menu ul li a {
-        font-size: 14px !important;
+        font-size: 8px !important;
     }
 }
 @media screen and (max-width: 250px) {
